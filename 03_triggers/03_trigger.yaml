@@ -22,7 +22,17 @@ spec:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: github-secret
-type: Opaque
+  name: github-secret 
+  annotations:
+    tekton.dev/git-0: https://github.com
+type: kubernetes.io/basic-auth
 stringData:
-  secretToken: "1234567"
+  username: olajideoluwatoosin
+  password: "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"
+# apiVersion: v1
+# kind: Secret
+# metadata:
+#   name: github-secret
+# type: Opaque
+# stringData:
+#   secretToken: "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"
