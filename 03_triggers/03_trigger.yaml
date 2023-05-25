@@ -28,7 +28,7 @@ metadata:
 type: kubernetes.io/basic-auth
 stringData:
   username: olajideoluwatoosin
-  password: "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"
+  secretToken: "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"
 # apiVersion: v1
 # kind: Secret
 # metadata:
